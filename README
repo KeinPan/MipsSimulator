@@ -1,0 +1,40 @@
+Name: Zhixin Pan
+UFID: 35554386
+e-mail: panzhixin@ufl.edu
+
+1. This folder contains all files for projectII.
+I've already put one MIPSsim inside. If you want to start with a new one:
+In terminal, first type :make cl, which will remove the existing file
+Then type : make
+
+2. We accept commands in the form as: 
+./MIPSsim inputfile outputfile [-Tm:n]
+for example, ./MIPSsim inputfile outputfile -T3:11
+
+-> inputfile should be Binary. If there is no such file, we would generate error Message. 
+-> outputfile could be a text document. NOTE: If there is no such file, we would create a new file named by this. If there is already an existing file, the content would be overlapped.
+-> [-Tm:n] is optional. If not provided or got T0:0 , we would print situation of all the cycles. We require m<n. Also, "-" before "T" can not be omitted.
+NOTE: Unlike ProjectI, for ProjectII, we don't accept options like dis/sim.
+
+3.The output should match the Final_output given on webpage, not the early version.
+
+4.I only implemented the instructions given on webpage.Instructions beyond that set would be considered as unknown operations.
+
+5.I coded in C++ and used g++ complier in MakeFile, if the computer doesn't support that complier, try any other complier which supports C++11.
+
+*****VERY IMPORTANT*****:
+If using "diff" command to test my result, please add "-b" option.
+For example:  " diff Final_output.txt outputfile -b "
+
+
+"-b" would ignore the differences of end-of-line & tabs.
+The reason for that is the output for end-of-line and tabs would differ from operating system to operating systems. I finished my coding work under MacOs, but when put it to linux64 for testing, the diff command gave me mistaching result.
+I checked my output and sample output for several times, and ensure they are the same. Not until "-b" option added did the terminal stopped posting mismatching messages. 
+
+
+If you have any questions about the project or codes, or if there is anything wrong when running my codes, please contact me with the email address given above.
+
+
+
+*****HONOR CODE*****
+On my honor, I have neighter given or received unauthorized aid on this assignment.
